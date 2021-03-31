@@ -7,7 +7,8 @@ static struct my_dat {
 } my_fun_data; /* tasklet bottom half */
 
 static void t_fun (unsigned long t_arg) { 
-} DECLARE_TASKLET (t_name, t_fun, (unsigned long)&my_data);
+} 
+DECLARE_TASKLET (t_name, t_fun, (unsigned long)&my_data);
 
 /* interrupt handler */
 static irqreturn_t my_interrupt (int irq, void *dev_id) { 
